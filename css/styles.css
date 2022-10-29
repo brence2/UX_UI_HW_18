@@ -33,6 +33,63 @@ ul {
     text-align: center;
 }
 
+.flexContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skillCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+
+
+#myWork-Grid {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: content 1ft 1ft 1ft;
+    row-gap: 25px;
+    grid-template-areas: 
+    "head head"
+    "item1 project1"
+    "item2 project2"
+    "item3 project3"
+    ;
+  
+}
+
+#grid {
+    grid-area: head;
+}
+
+.item1 {
+grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+    }
+
+.item3 {
+    grid-area: item3;
+ }
+
+.projec1 {
+    grid-area: project2;
+}
+
+.projec2 {
+    grid-area: project2;
+}
+
+.projec3 {
+    grid-area: projec3;
+}
+
+
 footer {
     background-color: black;
 }
